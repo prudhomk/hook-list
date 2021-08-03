@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Village from '../../containers/Village';
-import VillagerDetail from '../../containers/VillagerDetail';
+import VillagerDetailList from '../../containers/VillagerDetailList';
 import {
   BrowserRouter as Router,
   Route,
@@ -20,7 +20,7 @@ export default class App extends Component {
           />
 
           <Route path="/:_id" exact={true}
-            component={VillagerDetail}
+            component={VillagerDetailList}
           />
 
         </Switch>
