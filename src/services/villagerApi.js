@@ -8,6 +8,6 @@ export const fetchVillager = async () => {
 export const fetchByVillager = async (_id) => {
   const res = await fetch(`https://ac-vill.herokuapp.com/villagers/${_id}`);
   const json = await res.json();
-  console.log(json);
+  console.log('api call', json);
   return json;
 };

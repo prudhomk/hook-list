@@ -8,7 +8,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 const server = setupServer(
   rest.get(
-    'https://ac-vill.herokuapp.com/villagers/:id',
+    'https://ac-vill.herokuapp.com/villagers/1',
     (req, res, ctx) => {
       return res(
         ctx.json(
@@ -17,10 +17,6 @@ const server = setupServer(
             'image':'https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138',
             'species':'bird',
             'phrase':'aye aye',
-            'quote': 'Only quitters give up.',
-            'personality': 'cranky',
-            'birthday': 'January 27th (Aquarius)',
-            'skill': 'Writing about pickles',
           }
           ])
       );

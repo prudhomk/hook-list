@@ -9,13 +9,13 @@ const VillagerDetailPage = () => {
   const { _id } = useParams();
 
   useEffect(async () => {
-    const villager = await fetchByVillager(_id);
-    setVillager(villager);
+    const villagerMatch = await fetchByVillager(_id);
+    setVillager(villagerMatch);
     setLoading(false);
-  }, {});
+  }, [_id]);
 
   if(loading) return <h1>Loading...</h1>;
-  return <VillagerDetail villager={villager} />;
+  return <VillagerDetail {...villager} />;
 };
 
 export default VillagerDetailPage;
