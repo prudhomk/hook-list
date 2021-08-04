@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Villager Detail component renders Villager Details 1`] = `
+<DocumentFragment>
+  <p />
+  <img />
+  <p />
+  <p />
+  <p />
+  <p />
+  <p />
+  <p />
+</DocumentFragment>
+`;
